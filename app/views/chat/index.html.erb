@@ -1,0 +1,9 @@
+<div id="chatbox">
+  <div class="message-list">
+    <div id="messages">
+      <%= render @messages %>
+    </div>
+  </div>
+</div>
+
+<%= render partial: "messages/form", locals: { message: @message } %>

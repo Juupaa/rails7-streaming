@@ -1,0 +1,5 @@
+<div id="<%= dom_id(message) %>" class="message">
+  <span class="timestamp"><%= message.created_at.strftime("%H:%M") %> - </span>
+  <span class="username"><%= message.username %>:</span>
+  <span><%= message.text %></span>
+</div>

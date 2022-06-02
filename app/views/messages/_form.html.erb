@@ -1,0 +1,5 @@
+<%= form_with model: message, id: "message-form", html: { autocomplete: "off" }, data: { controller: "message-form" } do |f| %>
+  <%= f.text_field :text, class: "new-message", data: { "message-form-target": "text" } %>
+  <%= f.hidden_field :username, data: { "message-form-target": "username" } %>
+  <%= f.submit class: "btn btn-submit" %>
+<% end %>
