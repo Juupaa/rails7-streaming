@@ -1,24 +1,13 @@
-# README
+# Juupaa/rails7-streaming
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Description
 
-Things you may want to cover:
+This is an example of how to implement Turbo streams.
 
-* Ruby version
+https://turbo.hotwired.dev/handbook/streams
 
-* System dependencies
+## Requirements
 
-* Configuration
+This project currently works with :
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+- Rails 7.0.x
