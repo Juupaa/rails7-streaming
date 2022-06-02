@@ -1,5 +1,6 @@
 <div id="chatbox">
   <div class="message-list">
+    <%= turbo_stream_from "messages" %>
     <div id="messages">
       <%= render @messages %>
     </div>
