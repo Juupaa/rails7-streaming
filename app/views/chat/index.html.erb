@@ -1,3 +1,5 @@
+<%= render partial: "messages/errors", locals: { errors: @message.errors.full_messages } %>
+
 <div id="chatbox">
   <div class="message-list">
     <%= turbo_stream_from "messages" %>

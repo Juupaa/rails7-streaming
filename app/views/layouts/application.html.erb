@@ -19,12 +19,12 @@
 
   <body>
     <main class="container mx-auto px-5">
-      <nav class="w-full flex pt-28 mb-5">
+      <nav class="w-full flex pt-24 mb-5">
         <h1 class="title">ChatApp</h1>
         
         <div data-controller="username">
-          <input type="text" name="username" id="username" placeholder="Choose your username" class="text-input" data-username-target="input">
-          <button class="btn" data-action="click->username#change">Change username</button>
+          <input type="text" name="username" id="username" placeholder="Choose your username" data-username-target="input" data-action="input->username#change">
+          <button class="btn" disabled="disabled" data-username-target="submit" data-action="click->username#submit">Change username</button>
         </div>
       </nav>
 

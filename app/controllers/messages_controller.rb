@@ -16,7 +16,7 @@ class MessagesController < ApplicationController
       if @message.save
         format.turbo_stream
       else
-        format.html { render :new, status: :unprocessable_entity }
+        format.turbo_stream { render turbo_stream: turbo_stream.replace("errors", partial: "errors", locals: { errors: @message.errors.full_messages }) }
       end
     end
   end

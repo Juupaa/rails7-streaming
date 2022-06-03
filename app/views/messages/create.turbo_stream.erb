@@ -5,3 +5,7 @@
 <%= turbo_stream.replace "message-form" do %>
   <%= render "form", message: Message.new %>
 <% end %>
+
+<%= turbo_stream.replace "errors" do %>
+  <% render "errors", errors: [] %>
+<% end %>
